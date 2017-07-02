@@ -5,13 +5,15 @@
     <meta charset="UTF-8">
     <title>Email Validator</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="lib/validate-email.js"></script>
   </head>
 
   <body>
 
     <form action="" autocomplete="off">
-      <input type="text" name="invalid-email" placeholder="Your email address" value="admin@example" class="error">
-      <span class="error">Email address is not valid.</span>
+      <input id="validate" type="text" name="invalid-email" placeholder="Input Your email address" value="admin@example.com" class="error">
+      <span id="validateEmail" class="error">Email address is not valid.</span>
     </form>
 
     <script src="js/jquery.min.js"></script>
